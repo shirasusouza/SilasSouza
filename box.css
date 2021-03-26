@@ -1,25 +1,29 @@
 body,ul,li,
-p{  
-
+p
+{
     list-style: none;
     margin: 0px;
     padding: 0px;
     font-size: 1.2rem;
-    font-family: Arial,
+    font-family: Arial;
 }
-a{
+a
+{
     text-decoration: none;
     color: lavender;
 }
-h1{
+h1
+{
     text-align: center;
     margin-top: 100px;
 }
-img{
+img
+{
     max-width: 100%;
     display: block;
 }
-.header{
+.header
+{
     background-color: #1d1e20;
     display: flex;
     flex-wrap: wrap;
@@ -27,22 +31,27 @@ img{
     padding: 20px;
     align-items: center;
 }
-.menu{
+.menu
+{
     display: flex;
 }
-.menu li{
+.menu li
+{
     margin-left: 10px;
 }
-img{
+img
+{
     max-width: 100%;
     max-height: 100%;
     display: block;
 }
-.menu li a{
+.menu li a
+{
     display: block;
     padding: 10px;
 }
-div{
+div
+{
     display: inline-block;
     background-color: rgb(169, 249, 255);
     border: 2px solid black;
@@ -51,20 +60,87 @@ div{
     width: 300px;
     text-decoration: none;
 }
+/* organinzando  minhas divs*/
+div#d1:hover
+{
+    color: blueviolet;
+}
+div#d2:hover
+{
+    background-image:linear-gradient(-45deg,blue,yellow,red);
+}
+
 /*css pra organizar minha lista */
-.flex{
+.flex
+{
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
     max-width: 800px;
 }
-.flex > div{
+.flex > div
+{
     flex: 1 1 200px;
-    margin: 5px;
+    margin: 10px;
+    position: relative;
+    background-color:(#fffbfb);
 }
-.txt{
+.txt
+{
     text-align: center;
     text-decoration: none;
     font-family: arial;
     color: #1d1e20;
+}
+.rodape>div
+{
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-items: center;
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    text-align: center;
+}
+.sombras
+{
+    position: relative;
+    margin: 200px auto 10;
+    width: 400px;
+    height: 250px;
+    background: linear-gradient(-45deg,#000,#262626);
+}
+.sombras::before
+{
+    content: '';
+    position: absolute;
+    top:-5px;
+    left: -5px;
+    right: -5px;
+    background: linear-gradient(-50deg,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000);
+    background-size: 200%;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    z-index: -1;
+    animation: animate 30s linear infinite;
+}
+.sombras::after
+{
+    filter: blur(-20px);
+}
+@keyframes animate
+{
+    0%
+    {background-position: 0 0;}
+    50%
+    {background-position: 200% 0;}
+    100%
+    {background-position: 0 0;}
+}
+div#finn{
+    border-top-style: none;
+}
+div#pdiv{
+    border-bottom-style: none;
 }
