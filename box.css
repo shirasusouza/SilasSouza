@@ -30,6 +30,8 @@ img
     justify-content: space-between;
     padding: 20px;
     align-items: center;
+    height: 150px;
+    width: 1320px;
 }
 .menu
 {
@@ -56,8 +58,8 @@ div
     background-color: rgb(169, 249, 255);
     border: 2px solid black;
     text-align: center;
-    height: 350px;
-    width: 300px;
+    height: 360px;
+    width: 310px;
     text-decoration: none;
 }
 /* organinzando  minhas divs*/
@@ -127,7 +129,7 @@ div#d2:hover
 }
 .sombras::after
 {
-    filter: blur(-20px);
+    filter: blur(20px);
 }
 @keyframes animate
 {
